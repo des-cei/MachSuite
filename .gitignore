@@ -19,3 +19,15 @@ spmv/ellpack/spmv
 stencil/stencil2d/stencil
 stencil/stencil3d/stencil
 viterbi/viterbi/viterbi
+
+# SDSoC files
+tests/*
+!tests/baremetal
+tests/baremetal/RemoteSystemsTempFiles
+tests/baremetal/*.*
+tests/baremetal/*/Debug
+tests/baremetal/*/Release
+tests/baremetal/*/.Xil
+
+# ARTICo³ files
+
