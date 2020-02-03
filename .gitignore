@@ -30,4 +30,6 @@ tests/baremetal/*/Release
 tests/baremetal/*/.Xil
 
 # ARTICo³ files
-
+!tests/artico3
+tests/artico3/**/*.sw
+tests/artico3/**/*.hw
