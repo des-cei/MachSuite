@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdsproject:SDSProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" name="gemm_ncubed" location="/home/alfonso/zynq/MachSuite/tests/baremetal/gemm_ncubed" platform="zed" sysConfig="standalone" runtime="C/C++" cpu="a9_0" os="standalone" ConfigType="Debug">
+  <configuration name="Debug" id="com.xilinx.sdsoc.managedbuild.project.debug.1225487957">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="false" gensdcard="false" dmclkid="2" md5SumElf="2f407792a49f7c56ed3f0ff8df270af7" enableHwSwTrace="false" traceApplication="false" genEmulationModel="false"/>
+    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="false" dmclkid="2" estimateSpeedup="true" md5SumElf="d4124d25276252d6109185b2a6c68d9c" enableHwSwTrace="false" traceApplication="false" genEmulationModel="false">
+      <accelerator name="gemm" filepath="src/gemm.c" clkid="2" location="/home/alfonso/zynq/MachSuite/tests/baremetal/gemm_ncubed/src/gemm.c"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdsoc.managedbuild.project.release.1591985795">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="false" dmclkid="2" md5SumElf="1ef28cc322f2a38da89d8a5c35529aba" enableHwSwTrace="false" traceApplication="false" genEmulationModel="false">
+      <accelerator name="gemm" filepath="src/gemm.c" clkid="2" location="/home/alfonso/zynq/MachSuite/tests/baremetal/gemm_ncubed/src/gemm.c"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="false" dmclkid="2" md5SumElf="1ef28cc322f2a38da89d8a5c35529aba" enableHwSwTrace="false" traceApplication="false" genEmulationModel="false">
+      <accelerator name="gemm" filepath="src/gemm.c" clkid="2" location="/home/alfonso/zynq/MachSuite/tests/baremetal/gemm_ncubed/src/gemm.c"/>
+    </lastBuildOptions>
+  </configuration>
+</sdsproject:SDSProject>
