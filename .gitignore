@@ -20,8 +20,11 @@ stencil/stencil2d/stencil
 stencil/stencil3d/stencil
 viterbi/viterbi/viterbi
 
-# SDSoC files
+# General files
 tests/*
+!tests/README
+
+# SDSoC files
 !tests/baremetal
 tests/baremetal/RemoteSystemsTempFiles
 tests/baremetal/*.*

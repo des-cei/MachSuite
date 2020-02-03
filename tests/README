@@ -1,0 +1,10 @@
+
+  List of changes wrt MachSuite:
+
+  Benchmark    | SDSoC           | ARTICo³
+ --------------|-----------------|---------------------
+  GEMM/NCUBED  | double -> float | double -> float
+  GEMM/BLOCKED | double -> float | double -> float
+
+
+  Author: Alfonso Rodríguez <alfonso.rodriguezm@upm.es>
