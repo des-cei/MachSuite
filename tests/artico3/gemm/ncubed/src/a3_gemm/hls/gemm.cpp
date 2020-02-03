@@ -2,7 +2,7 @@
 #include "artico3.h"
 
 //~ void gemm( TYPE m1[N], TYPE m2[N], TYPE prod[N] ){
-A3_KERNEL( a3in_t m1, a3in_t m2, a3out_t prod ){
+A3_KERNEL(a3in_t m1, a3in_t m2, a3out_t prod){
     int i, j, k;
     int k_col, i_col;
     TYPE mult;
