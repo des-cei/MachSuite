@@ -5,7 +5,7 @@
 
 int INPUT_SIZE = sizeof(struct bench_args_t);
 
-#define EPSILON ((TYPE)1.0e-6)
+#define EPSILON ((TYPE)1.0e-3) //((TYPE)1.0e-6)
 
 #define ITERATIONS (1024)
 #define ACCELERATORS (1)

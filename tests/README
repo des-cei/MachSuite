@@ -8,16 +8,23 @@
   GEMM/NCUBED   | double -> float | double -> float
   GEMM/BLOCKED  | double -> float | double -> float
 
+
   * Common changes:
+
     - EPSILON < 10e-3 when double -> float
-      FFT/STRIDED
+        GEMM/NCUBED
+        GEMM/BLOCKED
+        FFT/STRIDED
+
     - struct ports -> individual component ports
-      AES/AES
+        AES/AES
+
     - Equalized array ports (e.g. uint8_t a[32], uint8_t b[16] -> uint8_t a[32], uint8_t b[32])
-      AES/AES
+        AES/AES
+
 
   * Kernels NOT implemented
-    FFT/TRANSPOSE : resource limitations
+      FFT/TRANSPOSE : resource limitations
 
 
   Author: Alfonso Rodríguez <alfonso.rodriguezm@upm.es>
