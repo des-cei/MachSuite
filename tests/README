@@ -4,7 +4,7 @@
   Benchmark     | SDSoC           | ARTICo³
  ---------------|-----------------|---------------------
   AES/AES       | N/A             | uint8_t -> uint32_t
-  FFT/STRIDED   | TODO            | double -> float
+  FFT/STRIDED   | double -> float | double -> float
   GEMM/NCUBED   | double -> float | double -> float
   GEMM/BLOCKED  | double -> float | double -> float
 
@@ -21,6 +21,7 @@
 
     - Equalized array ports (e.g. uint8_t a[32], uint8_t b[16] -> uint8_t a[32], uint8_t b[32])
         AES/AES
+        FFT/STRIDED
 
 
   * Kernels NOT implemented
