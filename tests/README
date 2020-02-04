@@ -1,10 +1,17 @@
 
-  List of changes wrt MachSuite:
+  List of changes in MachSuite:
 
   Benchmark    | SDSoC           | ARTICo³
  --------------|-----------------|---------------------
+  AES/AES      | N/A             | uint8_t -> uint32_t
   GEMM/NCUBED  | double -> float | double -> float
   GEMM/BLOCKED | double -> float | double -> float
+
+  * Common changes:
+    - struct ports -> individual component ports
+      AES/AES
+    - Equalized array ports (e.g. uint8_t a[32], uint8_t b[16] -> uint8_t a[32], uint8_t b[32])
+      AES/AES
 
 
   Author: Alfonso Rodríguez <alfonso.rodriguezm@upm.es>
