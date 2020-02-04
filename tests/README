@@ -9,7 +9,7 @@
   GEMM/BLOCKED  | double -> float | double -> float
 
 
-  * Common changes:
+  * Other changes:
 
     - EPSILON < 10e-3 when double -> float
         GEMM/NCUBED
@@ -25,7 +25,15 @@
 
 
   * Kernels NOT implemented
-      FFT/TRANSPOSE : resource limitations
+      BACKPROP/BACKPROP : resource limitations
+      FFT/TRANSPOSE     : resource limitations
+
+  * Kernels TO BE CHECKED
+      BFS/BULK          : too many parameters in top (requires port packing)
+      BFS/QUEUE         : too many parameters in top (requires port packing)
+      NW/NW             : excessive memory requirements (set LEN = 64, regenerate input.data & check.data)
+      STENCIL/STENCIL2D : excessive memory requirements (set row_size = 64, regenerate input.data & check.data)
+      STENCIL/STENCIL3D : excessive memory requirements (set height_size = 16 & col_size = 16, regenerate input.data & check.data)
 
 
   Author: Alfonso Rodríguez <alfonso.rodriguezm@upm.es>
