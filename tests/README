@@ -1,44 +1,38 @@
 
   List of changes in MachSuite:
 
-  Benchmark     | SDSoC           | ARTICo³
- ---------------|-----------------|---------------------
-  AES/AES       | N/A             | uint8_t -> uint32_t
- ---------------|-----------------|---------------------
-  FFT/STRIDED   | double -> float | double -> float
- ---------------|-----------------|---------------------
-  GEMM/NCUBED   | double -> float | double -> float
- ---------------|-----------------|---------------------
-  GEMM/BLOCKED  | double -> float | double -> float
- ---------------|-----------------|---------------------
-  MD/KNN        | N/A             | double -> float
- ---------------|-----------------|---------------------
-  MD/GRID       | N/A             | double -> float
- ---------------|-----------------|---------------------
+  Benchmark     | SDSoC              | ARTICo³
+ ---------------|--------------------|---------------------
+  AES/AES       | Port flatten       | uint8_t -> uint32_t
+                | Array equalization | Port flatten
+ ---------------|--------------------|---------------------
+  FFT/STRIDED   | double -> float    | double -> float
+                | EPSILON = 10e-3    | EPSILON = 10e-3
+                | Array equalization |
+ ---------------|--------------------|---------------------
+  GEMM/NCUBED   | double -> float    | double -> float
+                | EPSILON = 10e-3    | EPSILON = 10e-3
+ ---------------|--------------------|---------------------
+  GEMM/BLOCKED  | double -> float    | double -> float
+                | EPSILON = 10e-3    | EPSILON = 10e-3
+ ---------------|--------------------|---------------------
+  KMP/KMP       | N/A                | char -> uint32_t
+                |                    | STRING_SIZE = 8192
+                |                    | Port packing
+ ---------------|--------------------|---------------------
+  MD/KNN        | N/A                | double -> float
+                |                    | EPSILON = 10e-3
+                |                    | Port packing
+ ---------------|--------------------|---------------------
+  MD/GRID       | N/A                | double -> float
+                |                    | EPSILON = 10e-3
+ ---------------|--------------------|---------------------
 
-
-  * Other changes:
-
-    - EPSILON < 10e-3 when double -> float
-        GEMM/NCUBED
-        GEMM/BLOCKED
-        FFT/STRIDED
-        MD/KNN
-        MD/GRID
-
-    - struct ports -> individual component ports
-        AES/AES
-
-    - [SDSoC] Equalized array ports (fix problems with accelerator calls)
-        AES/AES     : uint8_t buf[16] -> uint8_t buf[32]
-        FFT/STRIDED : double *_twid[FFT_SIZE/2] -> float *_twid[FFT_SIZE]
-
-    - [ARTICo³] Packed memory ports
-        KMP/KMP
-        MD/KNN
-
-    - [ARTICo³] Array flattening
-        MD/GRID : force[blockSide][blockSide][blockSide][densityFactor] -> force[blockSide*blockSide*blockSide*densityFactor]
+  INFO:
+    * Port flatten       : transform struct ports in independent component ports
+    * Array equalization : set all array ports to same size to fix problems with accelerator calls in SDSoC
+    * Port packing       : pack several memories in one ARTICo³ port
+    * Array flatten      : convert N-D ports in 1-D ARTICo³ ports
 
 
   * Kernels NOT implemented
