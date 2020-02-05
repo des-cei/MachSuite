@@ -6,6 +6,10 @@
   AES/AES       | Port flatten       | uint8_t -> uint32_t
                 | Array equalization | Port flatten
  ---------------|--------------------|---------------------
+  BFS/BULK      |                    | uint64_t -> uint32_t
+                |                    | Port flatten
+                |                    | Port packing
+ ---------------|--------------------|---------------------
   FFT/STRIDED   | double -> float    | double -> float
                 | EPSILON = 10e-3    | EPSILON = 10e-3
                 | Array equalization |
@@ -16,15 +20,15 @@
   GEMM/BLOCKED  | double -> float    | double -> float
                 | EPSILON = 10e-3    | EPSILON = 10e-3
  ---------------|--------------------|---------------------
-  KMP/KMP       | N/A                | char -> uint32_t
+  KMP/KMP       |                    | char -> uint32_t
                 |                    | STRING_SIZE = 8192
                 |                    | Port packing
  ---------------|--------------------|---------------------
-  MD/KNN        | N/A                | double -> float
+  MD/KNN        |                    | double -> float
                 |                    | EPSILON = 10e-3
                 |                    | Port packing
  ---------------|--------------------|---------------------
-  MD/GRID       | N/A                | double -> float
+  MD/GRID       |                    | double -> float
                 |                    | EPSILON = 10e-3
  ---------------|--------------------|---------------------
 
