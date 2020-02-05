@@ -35,6 +35,15 @@
   MD/GRID       |                    | double -> float
                 |                    | EPSILON = 10e-3
  ---------------|--------------------|---------------------
+  NW/NW         |                    | char -> uint32_t
+                |                    | ALEN = 63
+                |                    | BLEN = 63
+                |                    | Port packing
+ ---------------|--------------------|---------------------
+  SORT/MERGE    |                    | N/A
+ ---------------|--------------------|---------------------
+  SORT/RADIX    |                    | int -> uint32_t
+ ---------------|--------------------|---------------------
 
   INFO:
     * Port flatten       : transform struct ports in independent component ports
@@ -48,7 +57,6 @@
       FFT/TRANSPOSE     : resource limitations
 
   * Kernels TO BE CHECKED
-      NW/NW             : excessive memory requirements (set LEN = 64, regenerate input.data & check.data)
       STENCIL/STENCIL2D : excessive memory requirements (set row_size = 64, regenerate input.data & check.data)
       STENCIL/STENCIL3D : excessive memory requirements (set height_size = 16 & col_size = 16, regenerate input.data & check.data)
 
