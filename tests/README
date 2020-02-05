@@ -10,6 +10,10 @@
                 |                    | Port flatten
                 |                    | Port packing
  ---------------|--------------------|---------------------
+  BFS/QUEUE     |                    | uint64_t -> uint32_t
+                |                    | Port flatten
+                |                    | Port packing
+ ---------------|--------------------|---------------------
   FFT/STRIDED   | double -> float    | double -> float
                 | EPSILON = 10e-3    | EPSILON = 10e-3
                 | Array equalization |
@@ -44,8 +48,6 @@
       FFT/TRANSPOSE     : resource limitations
 
   * Kernels TO BE CHECKED
-      BFS/BULK          : too many parameters in top (requires port packing)
-      BFS/QUEUE         : too many parameters in top (requires port packing)
       NW/NW             : excessive memory requirements (set LEN = 64, regenerate input.data & check.data)
       STENCIL/STENCIL2D : excessive memory requirements (set row_size = 64, regenerate input.data & check.data)
       STENCIL/STENCIL3D : excessive memory requirements (set height_size = 16 & col_size = 16, regenerate input.data & check.data)
