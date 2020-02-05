@@ -4,9 +4,17 @@
   Benchmark     | SDSoC           | ARTICo³
  ---------------|-----------------|---------------------
   AES/AES       | N/A             | uint8_t -> uint32_t
+ ---------------|-----------------|---------------------
   FFT/STRIDED   | double -> float | double -> float
+ ---------------|-----------------|---------------------
   GEMM/NCUBED   | double -> float | double -> float
+ ---------------|-----------------|---------------------
   GEMM/BLOCKED  | double -> float | double -> float
+ ---------------|-----------------|---------------------
+  MD/KNN        | N/A             | double -> float
+ ---------------|-----------------|---------------------
+  MD/GRID       | N/A             | double -> float
+ ---------------|-----------------|---------------------
 
 
   * Other changes:
@@ -15,13 +23,22 @@
         GEMM/NCUBED
         GEMM/BLOCKED
         FFT/STRIDED
+        MD/KNN
+        MD/GRID
 
     - struct ports -> individual component ports
         AES/AES
 
-    - Equalized array ports (e.g. uint8_t a[32], uint8_t b[16] -> uint8_t a[32], uint8_t b[32])
-        AES/AES
-        FFT/STRIDED
+    - [SDSoC] Equalized array ports (fix problems with accelerator calls)
+        AES/AES     : uint8_t buf[16] -> uint8_t buf[32]
+        FFT/STRIDED : double *_twid[FFT_SIZE/2] -> float *_twid[FFT_SIZE]
+
+    - [ARTICo³] Packed memory ports
+        KMP/KMP
+        MD/KNN
+
+    - [ARTICo³] Array flattening
+        MD/GRID : force[blockSide][blockSide][blockSide][densityFactor] -> force[blockSide*blockSide*blockSide*densityFactor]
 
 
   * Kernels NOT implemented
