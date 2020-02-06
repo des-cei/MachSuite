@@ -76,4 +76,7 @@
       FFT/TRANSPOSE     : resource limitations
 
 
+  NOTE: All tests have been carried out using SDSoC 2017.1 and Vivado 2017.1
+
+
   Author: Alfonso Rodríguez <alfonso.rodriguezm@upm.es>
