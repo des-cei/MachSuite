@@ -1,7 +1,7 @@
 
   List of changes in MachSuite:
 
-  Benchmark         | SDSoC              | ARTICo³
+  Benchmark         | SDSoC (ZedBoard)   | ARTICo³ (Pynq-Z1)
  -------------------|--------------------|---------------------
   AES/AES           | Port flatten       | uint8_t -> uint32_t
                     | Array equalization | Port flatten
@@ -55,6 +55,11 @@
  -------------------|--------------------|---------------------
   STENCIL/STENCIL3D |                    | height_size = 16
                     |                    | col_size = 16
+ -------------------|--------------------|---------------------
+  VITERBI/VITERBI   |                    | double -> float
+                    |                    | uint8_t -> uint32_t
+                    |                    | N_OBS = 64
+                    |                    | Port packing
  -------------------|--------------------|---------------------
 
   INFO:
