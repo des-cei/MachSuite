@@ -42,16 +42,17 @@
                     | Array equalization   | BLEN = 63
                     |                      | Port packing
  -------------------|----------------------|---------------------
-  SORT/MERGE        |                      | N/A
+  SORT/MERGE        | N/A                  | N/A
  -------------------|----------------------|---------------------
-  SORT/RADIX        |                      | int -> uint32_t
+  SORT/RADIX        | Array equalization   | int -> uint32_t
  -------------------|----------------------|---------------------
-  SPMV/CRS          |                      | double -> float
-                    |                      | EPSILON = 10e-3
+  SPMV/CRS          | double -> float      | double -> float
+                    | EPSILON = 10e-3      | EPSILON = 10e-3
+                    | Array equalization   |
  -------------------|----------------------|---------------------
-  SPMV/ELLPACK      |                      | double -> float
-                    |                      | EPSILON = 10e-3
-                    |                      | Port packing
+  SPMV/ELLPACK      | double -> float      | double -> float
+                    | EPSILON = 10e-3      | EPSILON = 10e-3
+                    | Array equalization   | Port packing
  -------------------|----------------------|---------------------
   STENCIL/STENCIL2D |                      | row_size = 64
  -------------------|----------------------|---------------------
