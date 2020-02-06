@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdsproject:SDSProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" name="kmp" location="/home/alfonso/zynq/MachSuite/tests/baremetal/kmp" platform="zed" sysConfig="standalone" runtime="C/C++" cpu="a9_0" os="standalone" ConfigType="Debug">
+  <configuration name="Debug" id="com.xilinx.sdsoc.managedbuild.project.debug.330167489">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="false" gensdcard="false" dmclkid="2" enableHwSwTrace="false" traceApplication="false"/>
+    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="false" gensdcard="false" dmclkid="2" enableHwSwTrace="false" traceApplication="false"/>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdsoc.managedbuild.project.release.2040001933">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="false" dmclkid="2" enableHwSwTrace="false" traceApplication="false">
+      <accelerator name="kmp" filepath="src/kmp.c" clkid="2" location="/home/alfonso/zynq/MachSuite/tests/baremetal/kmp/src/kmp.c"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="false" dmclkid="2" enableHwSwTrace="false" traceApplication="false">
+      <accelerator name="kmp" filepath="src/kmp.c" clkid="2" location="/home/alfonso/zynq/MachSuite/tests/baremetal/kmp/src/kmp.c"/>
+    </lastBuildOptions>
+  </configuration>
+</sdsproject:SDSProject>
