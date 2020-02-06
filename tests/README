@@ -32,8 +32,9 @@
                     | EPSILON = 10e-3    | EPSILON = 10e-3
                     |                    | Port packing
  -------------------|--------------------|---------------------
-  MD/GRID           |                    | double -> float
-                    |                    | EPSILON = 10e-3
+  MD/GRID           | double -> float    | double -> float
+                    | EPSILON = 10e-3    | EPSILON = 10e-3
+                    | Port flatten       | Port flatten
  -------------------|--------------------|---------------------
   NW/NW             |                    | char -> uint32_t
                     |                    | ALEN = 63
