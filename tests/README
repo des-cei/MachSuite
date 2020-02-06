@@ -16,7 +16,6 @@
  -------------------|--------------------|---------------------
   FFT/STRIDED       | double -> float    | double -> float
                     | EPSILON = 10e-3    | EPSILON = 10e-3
-                    | Array equalization |
  -------------------|--------------------|---------------------
   GEMM/NCUBED       | double -> float    | double -> float
                     | EPSILON = 10e-3    | EPSILON = 10e-3
