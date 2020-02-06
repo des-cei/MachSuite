@@ -28,8 +28,8 @@
                     |                    | STRING_SIZE = 8192
                     |                    | Port packing
  -------------------|--------------------|---------------------
-  MD/KNN            |                    | double -> float
-                    |                    | EPSILON = 10e-3
+  MD/KNN            | double -> float    | double -> float
+                    | EPSILON = 10e-3    | EPSILON = 10e-3
                     |                    | Port packing
  -------------------|--------------------|---------------------
   MD/GRID           |                    | double -> float
