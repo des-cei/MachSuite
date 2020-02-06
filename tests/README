@@ -1,66 +1,68 @@
 
   List of changes in MachSuite:
 
-  Benchmark         | SDSoC (ZedBoard)   | ARTICo³ (Pynq-Z1)
- -------------------|--------------------|---------------------
-  AES/AES           | Port flatten       | uint8_t -> uint32_t
-                    | Array equalization | Port flatten
- -------------------|--------------------|---------------------
-  BFS/BULK          |                    | uint64_t -> uint32_t
-                    |                    | Port flatten
-                    |                    | Port packing
- -------------------|--------------------|---------------------
-  BFS/QUEUE         |                    | uint64_t -> uint32_t
-                    |                    | Port flatten
-                    |                    | Port packing
- -------------------|--------------------|---------------------
-  FFT/STRIDED       | double -> float    | double -> float
-                    | EPSILON = 10e-3    | EPSILON = 10e-3
- -------------------|--------------------|---------------------
-  GEMM/NCUBED       | double -> float    | double -> float
-                    | EPSILON = 10e-3    | EPSILON = 10e-3
- -------------------|--------------------|---------------------
-  GEMM/BLOCKED      | double -> float    | double -> float
-                    | EPSILON = 10e-3    | EPSILON = 10e-3
- -------------------|--------------------|---------------------
-  KMP/KMP           |                    | char -> uint32_t
-                    |                    | STRING_SIZE = 8192
-                    |                    | Port packing
- -------------------|--------------------|---------------------
-  MD/KNN            | double -> float    | double -> float
-                    | EPSILON = 10e-3    | EPSILON = 10e-3
-                    |                    | Port packing
- -------------------|--------------------|---------------------
-  MD/GRID           | double -> float    | double -> float
-                    | EPSILON = 10e-3    | EPSILON = 10e-3
-                    | Port flatten       | Port flatten
- -------------------|--------------------|---------------------
-  NW/NW             |                    | char -> uint32_t
-                    |                    | ALEN = 63
-                    |                    | BLEN = 63
-                    |                    | Port packing
- -------------------|--------------------|---------------------
-  SORT/MERGE        |                    | N/A
- -------------------|--------------------|---------------------
-  SORT/RADIX        |                    | int -> uint32_t
- -------------------|--------------------|---------------------
-  SPMV/CRS          |                    | double -> float
-                    |                    | EPSILON = 10e-3
- -------------------|--------------------|---------------------
-  SPMV/ELLPACK      |                    | double -> float
-                    |                    | EPSILON = 10e-3
-                    |                    | Port packing
- -------------------|--------------------|---------------------
-  STENCIL/STENCIL2D |                    | row_size = 64
- -------------------|--------------------|---------------------
-  STENCIL/STENCIL3D |                    | height_size = 16
-                    |                    | col_size = 16
- -------------------|--------------------|---------------------
-  VITERBI/VITERBI   |                    | double -> float
-                    |                    | uint8_t -> uint32_t
-                    |                    | N_OBS = 64
-                    |                    | Port packing
- -------------------|--------------------|---------------------
+  Benchmark         | SDSoC (ZedBoard)     | ARTICo³ (Pynq-Z1)
+ -------------------|----------------------|---------------------
+  AES/AES           | Port flatten         | uint8_t -> uint32_t
+                    | Array equalization   | Port flatten
+ -------------------|----------------------|---------------------
+  BFS/BULK          | uint64_t -> uint32_t | uint64_t -> uint32_t
+                    | int8_t -> uint32_t   | Port flatten
+                    | Port flatten         | Port packing
+                    | Array equalization   |
+ -------------------|----------------------|---------------------
+  BFS/QUEUE         | uint64_t -> uint32_t | uint64_t -> uint32_t
+                    | int8_t -> uint32_t   | Port flatten
+                    | Port flatten         | Port packing
+                    | Array equalization   |
+ -------------------|----------------------|---------------------
+  FFT/STRIDED       | double -> float      | double -> float
+                    | EPSILON = 10e-3      | EPSILON = 10e-3
+ -------------------|----------------------|---------------------
+  GEMM/NCUBED       | double -> float      | double -> float
+                    | EPSILON = 10e-3      | EPSILON = 10e-3
+ -------------------|----------------------|---------------------
+  GEMM/BLOCKED      | double -> float      | double -> float
+                    | EPSILON = 10e-3      | EPSILON = 10e-3
+ -------------------|----------------------|---------------------
+  KMP/KMP           | STRING_SIZE = 8192   | char -> uint32_t
+                    | Array equalization   | STRING_SIZE = 8192
+                    |                      | Port packing
+ -------------------|----------------------|---------------------
+  MD/KNN            | double -> float      | double -> float
+                    | EPSILON = 10e-3      | EPSILON = 10e-3
+                    |                      | Port packing
+ -------------------|----------------------|---------------------
+  MD/GRID           | double -> float      | double -> float
+                    | EPSILON = 10e-3      | EPSILON = 10e-3
+                    | Port flatten         | Port flatten
+ -------------------|----------------------|---------------------
+  NW/NW             | ALEN = 63            | char -> uint32_t
+                    | BLEN = 63            | ALEN = 63
+                    | Array equalization   | BLEN = 63
+                    |                      | Port packing
+ -------------------|----------------------|---------------------
+  SORT/MERGE        |                      | N/A
+ -------------------|----------------------|---------------------
+  SORT/RADIX        |                      | int -> uint32_t
+ -------------------|----------------------|---------------------
+  SPMV/CRS          |                      | double -> float
+                    |                      | EPSILON = 10e-3
+ -------------------|----------------------|---------------------
+  SPMV/ELLPACK      |                      | double -> float
+                    |                      | EPSILON = 10e-3
+                    |                      | Port packing
+ -------------------|----------------------|---------------------
+  STENCIL/STENCIL2D |                      | row_size = 64
+ -------------------|----------------------|---------------------
+  STENCIL/STENCIL3D |                      | height_size = 16
+                    |                      | col_size = 16
+ -------------------|----------------------|---------------------
+  VITERBI/VITERBI   |                      | double -> float
+                    |                      | uint8_t -> uint32_t
+                    |                      | N_OBS = 64
+                    |                      | Port packing
+ -------------------|----------------------|---------------------
 
   INFO:
     * Port flatten       : transform struct ports in independent component ports
