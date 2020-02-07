@@ -23,7 +23,8 @@ viterbi/viterbi/viterbi
 # General files
 tests/*
 !tests/README
-!tests/baremetal_sw.txt
+!tests/baremetal.log
+!tests/artico3.log
 
 # MATLAB files
 !tests/matlab

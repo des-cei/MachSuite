@@ -1,3 +1,7 @@
+--------------------------
+-- SDSoC Software (-O3) --
+--------------------------
+
 <AES/AES> Elapsed time : 14.649 ms (average : 0.014 ms)
 Success.
 <BFS/BULK> Elapsed time : 145.268 ms (average : 0.142 ms)
@@ -32,3 +36,9 @@ Success.
 Success.
 <VITERBI/VITERBI> Elapsed time : 13867.979 ms (average : 13.543 ms)
 Success.
+
+--------------------
+-- SDSoC Hardware --
+--------------------
+
+
