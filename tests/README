@@ -54,14 +54,16 @@
                     | EPSILON = 10e-3      | EPSILON = 10e-3
                     | Array equalization   | Port packing
  -------------------|----------------------|---------------------
-  STENCIL/STENCIL2D |                      | row_size = 64
+  STENCIL/STENCIL2D | row_size = 64        | row_size = 64
+                    | Array equalization   |
  -------------------|----------------------|---------------------
-  STENCIL/STENCIL3D |                      | height_size = 16
-                    |                      | col_size = 16
+  STENCIL/STENCIL3D | height_size = 16     | height_size = 16
+                    | col_size = 16        | col_size = 16
+                    | Array equalization   |
  -------------------|----------------------|---------------------
-  VITERBI/VITERBI   |                      | double -> float
-                    |                      | uint8_t -> uint32_t
-                    |                      | N_OBS = 64
+  VITERBI/VITERBI   | double -> float      | double -> float
+                    | N_OBS = 64           | uint8_t -> uint32_t
+                    | Array equalization   | N_OBS = 64
                     |                      | Port packing
  -------------------|----------------------|---------------------
 
