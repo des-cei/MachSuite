@@ -25,6 +25,7 @@ tests/*
 !tests/README
 !tests/baremetal.log
 !tests/artico3.log
+!tests/check.sh
 
 # MATLAB files
 !tests/matlab
