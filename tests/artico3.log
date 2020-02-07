@@ -1,0 +1,128 @@
+Running ./aes_1acc...
+Kernel loading : 16.241 ms
+Kernel execution : 219.289 ms (average : 0.214 ms)
+Success.
+Running ./bfs_bulk_1acc...
+Kernel loading : 16.495 ms
+Kernel execution : 906.796 ms (average : 0.886 ms)
+Success.
+Running ./bfs_queue_1acc...
+Kernel loading : 17.853 ms
+Kernel execution : 930.882 ms (average : 0.909 ms)
+Success.
+Running ./fft_strided_1acc...
+Kernel loading : 16.615 ms
+Kernel execution : 1512.989 ms (average : 1.478 ms)
+Success.
+Running ./gemm_ncubed_1acc...
+Kernel loading : 16.804 ms
+Kernel execution : 30470.850 ms (average : 29.757 ms)
+Success.
+Running ./gemm_blocked_1acc...
+Kernel loading : 16.700 ms
+Kernel execution : 34496.684 ms (average : 33.688 ms)
+Success.
+Running ./kmp_1acc...
+Kernel loading : 16.780 ms
+Kernel execution : 1780.668 ms (average : 1.739 ms)
+Success.
+Running ./md_knn_1acc...
+Kernel loading : 16.812 ms
+Kernel execution : 4096.558 ms (average : 4.001 ms)
+Success.
+Running ./md_grid_1acc...
+Kernel loading : 16.332 ms
+Kernel execution : 569.836 ms (average : 0.556 ms)
+Success.
+Running ./nw_1acc...
+Kernel loading : 17.200 ms
+Kernel execution : 1217.180 ms (average : 1.189 ms)
+Success.
+Running ./sort_merge_1acc...
+Kernel loading : 16.598 ms
+Kernel execution : 1430.152 ms (average : 1.397 ms)
+Success.
+Running ./spmv_crs_1acc...
+Kernel loading : 60.075 ms
+Kernel execution : 801.850 ms (average : 0.783 ms)
+Success.
+Running ./spmv_ellpack_1acc...
+Kernel loading : 57.302 ms
+Kernel execution : 2405.832 ms (average : 2.349 ms)
+Success.
+Running ./stencil2d_1acc...
+Kernel loading : 60.062 ms
+Kernel execution : 3236.513 ms (average : 3.161 ms)
+Success.
+Running ./stencil3d_1acc...
+Kernel loading : 58.340 ms
+Kernel execution : 1186.557 ms (average : 1.159 ms)
+Success.
+Running ./viterbi_1acc...
+Kernel loading : 60.486 ms
+Kernel execution : 38677.496 ms (average : 37.771 ms)
+Success.
+Running ./aes_4acc...
+Kernel loading : 191.065 ms
+Kernel execution : 60.254 ms (average : 0.059 ms)
+Success.
+Running ./bfs_bulk_4acc...
+Kernel loading : 192.360 ms
+Kernel execution : 617.262 ms (average : 0.603 ms)
+Success.
+Running ./bfs_queue_4acc...
+Kernel loading : 190.029 ms
+Kernel execution : 622.975 ms (average : 0.608 ms)
+Success.
+Running ./fft_strided_4acc...
+Kernel loading : 190.567 ms
+Kernel execution : 606.266 ms (average : 0.592 ms)
+Success.
+Running ./gemm_ncubed_4acc...
+Kernel loading : 191.647 ms
+Kernel execution : 8095.126 ms (average : 7.905 ms)
+Success.
+Running ./gemm_blocked_4acc...
+Kernel loading : 192.333 ms
+Kernel execution : 9101.615 ms (average : 8.888 ms)
+Success.
+Running ./kmp_4acc...
+Kernel loading : 191.126 ms
+Kernel execution : 1173.331 ms (average : 1.146 ms)
+Success.
+Running ./md_knn_4acc...
+Kernel loading : 193.420 ms
+Kernel execution : 1439.703 ms (average : 1.406 ms)
+Success.
+Running ./md_grid_4acc...
+Kernel loading : 193.099 ms
+Kernel execution : 400.317 ms (average : 0.391 ms)
+Success.
+Running ./nw_4acc...
+Kernel loading : 193.040 ms
+Kernel execution : 828.466 ms (average : 0.809 ms)
+Success.
+Running ./sort_merge_4acc...
+Kernel loading : 198.508 ms
+Kernel execution : 522.663 ms (average : 0.510 ms)
+Success.
+Running ./spmv_crs_4acc...
+Kernel loading : 194.050 ms
+Kernel execution : 480.088 ms (average : 0.469 ms)
+Success.
+Running ./spmv_ellpack_4acc...
+Kernel loading : 190.772 ms
+Kernel execution : 1649.555 ms (average : 1.611 ms)
+Success.
+Running ./stencil2d_4acc...
+Kernel loading : 192.584 ms
+Kernel execution : 1250.055 ms (average : 1.221 ms)
+Success.
+Running ./stencil3d_4acc...
+Kernel loading : 186.675 ms
+Kernel execution : 738.589 ms (average : 0.721 ms)
+Success.
+Running ./viterbi_4acc...
+Kernel loading : 187.814 ms
+Kernel execution : 10074.484 ms (average : 9.838 ms)
+Success.
