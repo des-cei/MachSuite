@@ -32,14 +32,14 @@ curtick = get(gca, 'YTick');
 set(gca, 'YTickLabel', cellstr(num2str(curtick(:))))
 
 % Legend
-leg = legend('SDSoC (SW)', 'SDSoC (HW)', 'ARTICo^{3} (1acc)', 'ARTICo^{3} (4accs)', 'Location', 'Best');
+leg = legend('SDSoC (SW)', 'SDSoC (HW)', 'ARTICo^{3} (1 acc)', 'ARTICo^{3} (4 accs)', 'Location', 'Best');
 set(leg, 'FontSize', 8);
 set(leg,'Position',[0.385 0.8 0.25 0.1]);
 
 % Global axes configuration
 axis([0.5 17.5 0.01 1000]);
 
-%% Plot SDSoC SW vs ARTICo³ (1acc) vs ARTICo³ (4accs)
+%% Plot SDSoC SW vs ARTICo³ (1 acc) vs ARTICo³ (4 accs)
 
 % Create figure, plot and enable grid
 figure(2);
@@ -63,14 +63,14 @@ curtick = get(gca, 'YTick');
 set(gca, 'YTickLabel', cellstr(num2str(curtick(:))))
 
 % Legend
-leg = legend('SDSoC (SW)', 'ARTICo^{3} (1acc)', 'ARTICo^{3} (4accs)', 'Location', 'Best');
+leg = legend('SDSoC (SW)', 'ARTICo^{3} (1 acc)', 'ARTICo^{3} (4 accs)', 'Location', 'Best');
 set(leg, 'FontSize', 8);
 set(leg,'Position',[0.385 0.8 0.25 0.1]);
 
 % Global axes configuration
 axis([0.5 17.5 0.01 1000]);
 
-%% Plot SDSoC HW vs ARTICo³ (1acc) vs ARTICo³ (4accs)
+%% Plot SDSoC HW vs ARTICo³ (1 acc) vs ARTICo³ (4 accs)
 
 % Create figure, plot and enable grid
 figure(3);
@@ -94,14 +94,14 @@ curtick = get(gca, 'YTick');
 set(gca, 'YTickLabel', cellstr(num2str(curtick(:))))
 
 % Legend
-leg = legend('SDSoC (HW)', 'ARTICo^{3} (1acc)', 'ARTICo^{3} (4accs)', 'Location', 'Best');
+leg = legend('SDSoC (HW)', 'ARTICo^{3} (1 acc)', 'ARTICo^{3} (4 accs)', 'Location', 'Best');
 set(leg, 'FontSize', 8);
 set(leg,'Position',[0.385 0.8 0.25 0.1]);
 
 % Global axes configuration
 axis([0.5 17.5 0.01 1000]);
 
-%% Plot SDSoC SW vs ARTICo³ (1acc) data
+%% Plot SDSoC SW vs ARTICo³ (1 acc) data
 
 % Create figure, plot and enable grid
 figure(4);
@@ -125,7 +125,7 @@ curtick = get(gca, 'YTick');
 set(gca, 'YTickLabel', cellstr(num2str(curtick(:))))
 
 % Legend
-leg = legend('SDSoC (SW)', 'ARTICo^{3} (1acc)', 'Location', 'Best');
+leg = legend('SDSoC (SW)', 'ARTICo^{3} (1 acc)', 'Location', 'Best');
 set(leg, 'FontSize', 8);
 set(leg,'Position',[0.385 0.8 0.25 0.1]);
 
@@ -156,14 +156,14 @@ curtick = get(gca, 'YTick');
 set(gca, 'YTickLabel', cellstr(num2str(curtick(:))))
 
 % Legend
-leg = legend('SDSoC (SW)', 'ARTICo^{3} (4accs)', 'Location', 'Best');
+leg = legend('SDSoC (SW)', 'ARTICo^{3} (4 accs)', 'Location', 'Best');
 set(leg, 'FontSize', 8);
 set(leg,'Position',[0.385 0.8 0.25 0.1]);
 
 % Global axes configuration
 axis([0.5 17.5 0.01 1000]);
 
-%% Plot SDSoC HW vs ARTICo³ (1acc) data
+%% Plot SDSoC HW vs ARTICo³ (1 acc) data
 
 % Create figure, plot and enable grid
 figure(6);
@@ -187,14 +187,14 @@ curtick = get(gca, 'YTick');
 set(gca, 'YTickLabel', cellstr(num2str(curtick(:))))
 
 % Legend
-leg = legend('SDSoC (HW)', 'ARTICo^{3} (1acc)', 'Location', 'Best');
+leg = legend('SDSoC (HW)', 'ARTICo^{3} (1 acc)', 'Location', 'Best');
 set(leg, 'FontSize', 8);
 set(leg,'Position',[0.385 0.8 0.25 0.1]);
 
 % Global axes configuration
 axis([0.5 17.5 0.01 1000]);
 
-%% Plot SDSoC HW vs ARTICo³ (4accs) data
+%% Plot SDSoC HW vs ARTICo³ (4 accs) data
 
 % Create figure, plot and enable grid
 figure(7);
@@ -218,14 +218,14 @@ curtick = get(gca, 'YTick');
 set(gca, 'YTickLabel', cellstr(num2str(curtick(:))))
 
 % Legend
-leg = legend('SDSoC (HW)', 'ARTICo^{3} (4accs)', 'Location', 'Best');
+leg = legend('SDSoC (HW)', 'ARTICo^{3} (4 accs)', 'Location', 'Best');
 set(leg, 'FontSize', 8);
 set(leg,'Position',[0.385 0.8 0.25 0.1]);
 
 % Global axes configuration
 axis([0.5 17.5 0.01 1000]);
 
-%% Plot ARTICo³ (1acc) vs ARTICo³ (4accs) data
+%% Plot ARTICo³ (1 acc) vs ARTICo³ (4 accs) data
 
 % Create figure, plot and enable grid
 figure(8);
@@ -249,7 +249,7 @@ curtick = get(gca, 'YTick');
 set(gca, 'YTickLabel', cellstr(num2str(curtick(:))))
 
 % Legend
-leg = legend('ARTICo^{3} (1acc)', 'ARTICo^{3} (4accs)', 'Location', 'Best');
+leg = legend('ARTICo^{3} (1 acc)', 'ARTICo^{3} (4 accs)', 'Location', 'Best');
 set(leg, 'FontSize', 8);
 set(leg,'Position',[0.385 0.8 0.25 0.1]);
 
