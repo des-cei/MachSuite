@@ -41,4 +41,37 @@ Success.
 -- SDSoC Hardware --
 --------------------
 
-
+<AES/AES> Elapsed time : 1645.506 ms (average : 1.607 ms)
+Success.
+<BFS/BULK> Elapsed time : 7266.039 ms (average : 7.096 ms)
+Success.
+<BFS/QUEUE> Elapsed time : 6965.358 ms (average : 6.802 ms)
+Success.
+<FFT/STRIDED> Elapsed time : 27913.240 ms (average : 27.259 ms)
+Success.
+<GEMM/NCUBED> Elapsed time : 257904.562 ms (average : 251.860 ms)
+Success.
+<GEMM/BLOCKED> Elapsed time : 286597.656 ms (average : 279.881 ms)
+Success.
+<KMP/KMP> Elapsed time : 16240.603 ms (average : 15.860 ms)
+Success.
+<MD/KNN> Elapsed time : 11819.450 ms (average : 11.542 ms)
+Success.
+<MD/GRID> Elapsed time : 59824.988 ms (average : 58.423 ms)
+Success.
+<NW/NW> Elapsed time : 12169.987 ms (average : 11.885 ms)
+Success.
+<SORT/MERGE> Elapsed time : 31718.223 ms (average : 30.975 ms)
+Success.
+<SORT/RADIX> Elapsed time : 235874.828 ms (average : 230.347 ms)
+Success.
+<SPMV/CRS> Elapsed time : 4153.373 ms (average : 4.056 ms)
+Success.
+<SPMV/ELLPACK> Elapsed time : 6654.976 ms (average : 6.499 ms)
+Success.
+<STENCIL/STENCIL2D> Elapsed time : 29547.717 ms (average : 28.855 ms)
+Success.
+<STENCIL/STENCIL3D> Elapsed time : 6521.518 ms (average : 6.369 ms)
+Success.
+<VITERBI/VITERBI> Elapsed time : 319901.000 ms (average : 312.403 ms)
+Success.
