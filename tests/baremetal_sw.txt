@@ -1,0 +1,34 @@
+<AES/AES> Elapsed time : 14.649 ms (average : 0.014 ms)
+Success.
+<BFS/BULK> Elapsed time : 145.268 ms (average : 0.142 ms)
+Success.
+<BFS/QUEUE> Elapsed time : 160.573 ms (average : 0.157 ms)
+Success.
+<FFT/STRIDED> Elapsed time : 519.117 ms (average : 0.507 ms)
+Success.
+<GEMM/NCUBED> Elapsed time : 4548.061 ms (average : 4.441 ms)
+Success.
+<GEMM/BLOCKED> Elapsed time : 6131.333 ms (average : 5.988 ms)
+Success.
+<KMP/KMP> Elapsed time : 285.765 ms (average : 0.279 ms)
+Success.
+<MD/KNN> Elapsed time : 1040.637 ms (average : 1.016 ms)
+Success.
+<MD/GRID> Elapsed time : 4617.035 ms (average : 4.509 ms)
+Success.
+<NW/NW> Elapsed time : 249.372 ms (average : 0.244 ms)
+Success.
+<SORT/MERGE> Elapsed time : 861.528 ms (average : 0.841 ms)
+Success.
+<SORT/RADIX> Elapsed time : 3503.916 ms (average : 3.422 ms)
+Success.
+<SPMV/CRS> Elapsed time : 73.329 ms (average : 0.072 ms)
+Success.
+<SPMV/ELLPACK> Elapsed time : 147.467 ms (average : 0.144 ms)
+Success.
+<STENCIL/STENCIL2D> Elapsed time : 325.003 ms (average : 0.317 ms)
+Success.
+<STENCIL/STENCIL3D> Elapsed time : 171.888 ms (average : 0.168 ms)
+Success.
+<VITERBI/VITERBI> Elapsed time : 13867.979 ms (average : 13.543 ms)
+Success.

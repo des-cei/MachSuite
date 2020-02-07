@@ -23,6 +23,10 @@ viterbi/viterbi/viterbi
 # General files
 tests/*
 !tests/README
+!tests/baremetal_sw.txt
+
+# MATLAB files
+!tests/matlab
 
 # SDSoC files
 !tests/baremetal
